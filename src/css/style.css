@@ -1,0 +1,276 @@
+/* 詞と沈黙の辞典 - スタイルシート */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #3498db;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #5dade2;
+}
+
+main {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 2px solid #ecf0f1;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.entries-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.entry-list {
+  list-style: none;
+}
+
+.entry-list li {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.entry-list li:hover {
+  transform: translateX(5px);
+  background-color: #e8f4f8;
+}
+
+.entry-list a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: block;
+}
+
+.entry-list strong {
+  font-size: 1.3rem;
+  color: #2980b9;
+}
+
+.entry-list .reading {
+  color: #7f8c8d;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+.entry-list .preview {
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Entry page styles */
+.entry {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.entry h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #3498db;
+}
+
+.entry h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.sound-system {
+  background-color: #e8f4f8;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 5px solid #3498db;
+}
+
+.sound-system h3 {
+  margin-top: 0;
+  color: #2980b9;
+}
+
+.sound-system dl {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px 20px;
+  margin-top: 15px;
+}
+
+.sound-system dt {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.sound-system dd {
+  color: #555;
+}
+
+.meaning {
+  background-color: #fff8e1;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 5px solid #f39c12;
+}
+
+.meaning h3 {
+  margin-top: 0;
+  color: #d68910;
+}
+
+.meaning-content {
+  color: #555;
+  line-height: 1.8;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 8px;
+}
+
+.content ul {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.content li {
+  margin-bottom: 8px;
+}
+
+.tags {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #ecf0f1;
+}
+
+.tags h3 {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.tags ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags li {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  color: #7f8c8d;
+  border-top: 2px solid #ecf0f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .entry h2 {
+    font-size: 2rem;
+  }
+  
+  .sound-system dl {
+    grid-template-columns: 80px 1fr;
+  }
+}

@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: ホーム
+---
+
+<section class="hero">
+  <h2>✴【澄響創世｜再勘】</h2>
+  <p>言葉の音と意味を記録し、再検討する場</p>
+</section>
+
+<section class="entries-list">
+  <h2>エントリー一覧</h2>
+  
+  {% if collections.entries.length > 0 %}
+  <ul class="entry-list">
+    {% for entry in collections.entries %}
+    <li>
+      <a href="{{ entry.url }}">
+        <strong>{{ entry.data.title }}</strong>
+        {% if entry.data.sound and entry.data.sound.reading %}
+        <span class="reading">（{{ entry.data.sound.reading }}）</span>
+        {% endif %}
+      </a>
+      {% if entry.data.meaning %}
+      <p class="preview">{{ entry.data.meaning | striptags | truncate(100) }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>エントリーはまだありません。</p>
+  {% endif %}
+</section>

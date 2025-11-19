@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - 詞と沈黙の辞典</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>詞と沈黙の辞典（核義記）</h1>
+    <nav>
+      <a href="/">ホーム</a>
+    </nav>
+  </header>
+  
+  <main>
+    {{ content | safe }}
+  </main>
+  
+  <footer>
+    <p>名素・名胎・核義を記す非営利プロジェクト</p>
+  </footer>
+</body>
+</html>

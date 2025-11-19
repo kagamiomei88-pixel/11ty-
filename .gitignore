@@ -1,3 +1,6 @@
+# 11ty build output
+_site
+
 # Logs
 logs
 *.log
